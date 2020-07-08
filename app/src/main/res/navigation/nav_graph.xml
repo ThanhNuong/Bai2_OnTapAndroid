@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/listAllFriendFragment">
+    <fragment
+        android:id="@+id/listAllFriendFragment"
+        android:name="vn.edu.ntu.thanhnuong.bai2.ListAllFriendFragment"
+        android:label="fragment_list_all_friend"
+        tools:layout="@layout/fragment_list_all_friend" >
+        <action
+            android:id="@+id/action_listAllFriendFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="vn.edu.ntu.thanhnuong.bai2.DetailFragment"
+        android:label="fragment_detail"
+        tools:layout="@layout/fragment_detail" />
+</navigation>
